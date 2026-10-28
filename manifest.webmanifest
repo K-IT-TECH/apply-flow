@@ -1,0 +1,19 @@
+{
+  "id": "./",
+  "name": "ApplyFlow",
+  "short_name": "ApplyFlow",
+  "description": "An internship application pipeline with follow-up dates.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f5ee",
+  "theme_color": "#f5f5ee",
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
