@@ -2,9 +2,11 @@
 
 # ApplyFlow
 
+[**Open live app →**](https://k-it-tech.github.io/apply-flow/)
+
 An internship application pipeline with follow-up dates.
 
-**Status:** Working local-first web app. Responsive, dependency-free, and ready for GitHub Pages. No backend or account system.
+**Status:** Working local-first web app. Responsive, dependency-free, and published on GitHub Pages. No backend or account system.
 
 ## Why build it?
 
@@ -20,7 +22,6 @@ Use a practical app while preparing for internship applications.
 - Move applications between Saved, Applied, Interview and Offer.
 - Search the pipeline and filter applications that need follow-up.
 - Edit or delete applications and export a JSON backup.
-
 - Download and restore versioned JSON backups, with validation before replacement.
 - Use the app offline after the first successful online visit (HTTPS or localhost).
 
@@ -77,7 +78,7 @@ For future releases, update the cache version in `sw.js` when changing the offli
 
 Companies and roles in the demo are fictional. Follow-up dates highlight cards; they do not schedule notifications or contact anyone. Offer cards are excluded from the due filter. No job-board API, email integration, account login or automated application submission is included.
 
-Sample data is fictional. Changes stay in `localStorage` in this browser, are not encrypted, and do not sync across devices. Clearing browser data removes them. Multiple tabs do not coordinate edits. Use **Your data → Download backup** to export a version 1 JSON snapshot, then choose that file under **Restore** on another device. Restore validates the app name, version, fields, ranges and record references, previews the record count, and asks before replacing local data. Back up your current data first. Focus timers restore paused. Files larger than 2 MB are rejected. **Reset demo** replaces the saved data after confirmation. Browser data is separate from the source files you upload to GitHub.
+Sample data is fictional. Changes stay in `localStorage` in this browser, are not encrypted, and do not sync across devices. Clearing browser data removes them. Multiple tabs do not coordinate edits. Use **Your data → Download backup** to export a version 1 JSON snapshot, then choose that file under **Restore** on another device. Restore validates the app name, version, fields, ranges and record references, previews the record count, and asks before replacing local data. Back up your current data first. Files larger than 2 MB are rejected. **Reset demo** replaces the saved data after confirmation. Browser data is separate from the source files you upload to GitHub.
 
 ## Next steps
 
