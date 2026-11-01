@@ -6,7 +6,7 @@ const seed={applications:[
  {id:'a3',company:'Orbit Works',role:'Full-Stack Intern',stage:'Interview',followUp:UI.after(2),url:'',notes:'Fictional demo: prepare a short walkthrough of a project.'},
  {id:'a4',company:'Canvas Collective',role:'UI Developer Intern',stage:'Saved',followUp:'',url:'',notes:'Fictional demo: review the role and decide whether it fits.'}
 ]};
-let state=UI.load(KEY,seed,x=>Array.isArray(x.applications)&&x.applications.every(a=>a&&typeof a.company==='string'&&typeof a.role==='string'&&stages.includes(a.stage)));
+let state=UI.load(KEY,seed,data=>DataSchema.valid('apply-flow',data));
 let query='',dueOnly=false,editing=null;
 function safeURL(value){try{const u=new URL(value);return ['https:','http:'].includes(u.protocol)?u.href:'';}catch{return '';}}
 function due(a){return Boolean(a.followUp)&&a.followUp<=UI.today()&&a.stage!=='Offer';}
